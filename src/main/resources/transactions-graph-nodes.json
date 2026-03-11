@@ -1,0 +1,192 @@
+{
+  "nodes": [
+    {
+      "id": "N1",
+      "parentId": null,
+      "name": "Root Account",
+      "accountNumber": "ACC1001",
+      "transactions": [
+        {
+          "txnId": "T1",
+          "direction": "CREDIT",
+          "txnType": "SALARY",
+          "amount": 50000,
+          "currency": "INR",
+          "timestamp": "2025-01-01T09:00:00Z",
+          "description": "Salary Credit"
+        },
+        {
+          "txnId": "T2",
+          "direction": "CREDIT",
+          "txnType": "SALARY",
+          "amount": 50000,
+          "currency": "INR",
+          "timestamp": "2025-01-01T09:00:00Z",
+          "description": "Salary Credit"
+        }
+      ]
+    },
+
+    {
+      "id": "N2",
+      "parentId": "N1",
+      "name": "Savings Node",
+      "accountNumber": "ACC2001",
+      "transactions": [
+        {
+          "txnId": "T2",
+          "direction": "DEBIT",
+          "txnType": "TRANSFER",
+          "amount": 10000,
+          "currency": "INR",
+          "timestamp": "2025-01-02T10:00:00Z",
+          "description": "Transfer to Savings"
+        }
+      ]
+    },
+
+    {
+      "id": "N3",
+      "parentId": "N1",
+      "name": "Expense Node",
+      "accountNumber": "ACC2002",
+      "transactions": [
+        {
+          "txnId": "T3",
+          "direction": "DEBIT",
+          "txnType": "POS",
+          "amount": 3000,
+          "currency": "INR",
+          "timestamp": "2025-01-03T12:00:00Z",
+          "description": "Shopping"
+        }
+      ]
+    },
+
+    {
+      "id": "N4",
+      "parentId": "N2",
+      "name": "Investment Node",
+      "accountNumber": "ACC3001",
+      "transactions": [
+        {
+          "txnId": "T4",
+          "direction": "DEBIT",
+          "txnType": "TRANSFER",
+          "amount": 5000,
+          "currency": "INR",
+          "timestamp": "2025-01-04T09:30:00Z",
+          "description": "Investment Transfer"
+        }
+      ]
+    },
+
+    {
+      "id": "N5",
+      "parentId": "N2",
+      "name": "Emergency Fund Node",
+      "accountNumber": "ACC3002",
+      "transactions": [
+        {
+          "txnId": "T5",
+          "direction": "CREDIT",
+          "txnType": "TRANSFER",
+          "amount": 2000,
+          "currency": "INR",
+          "timestamp": "2025-01-05T11:00:00Z",
+          "description": "Emergency Savings"
+        }
+      ]
+    },
+
+    {
+      "id": "N6",
+      "parentId": "N3",
+      "name": "Food Expenses",
+      "accountNumber": "ACC3003",
+      "transactions": [
+        {
+          "txnId": "T6",
+          "direction": "DEBIT",
+          "txnType": "POS",
+          "amount": 800,
+          "currency": "INR",
+          "timestamp": "2025-01-06T13:00:00Z",
+          "description": "Restaurant Payment"
+        }
+      ]
+    },
+
+    {
+      "id": "N7",
+      "parentId": "N3",
+      "name": "Transport Expenses",
+      "accountNumber": "ACC3004",
+      "transactions": [
+        {
+          "txnId": "T7",
+          "direction": "DEBIT",
+          "txnType": "ATM",
+          "amount": 1000,
+          "currency": "INR",
+          "timestamp": "2025-01-07T08:00:00Z",
+          "description": "Taxi Payment"
+        }
+      ]
+    },
+
+    {
+      "id": "N8",
+      "parentId": "N4",
+      "name": "Stock Investments",
+      "accountNumber": "ACC4001",
+      "transactions": [
+        {
+          "txnId": "T8",
+          "direction": "DEBIT",
+          "txnType": "TRANSFER",
+          "amount": 3000,
+          "currency": "INR",
+          "timestamp": "2025-01-08T09:00:00Z",
+          "description": "Stock Purchase"
+        }
+      ]
+    },
+
+    {
+      "id": "N9",
+      "parentId": "N4",
+      "name": "Mutual Funds",
+      "accountNumber": "ACC4002",
+      "transactions": [
+        {
+          "txnId": "T9",
+          "direction": "DEBIT",
+          "txnType": "TRANSFER",
+          "amount": 1500,
+          "currency": "INR",
+          "timestamp": "2025-01-09T10:00:00Z",
+          "description": "Mutual Fund SIP"
+        }
+      ]
+    },
+
+    {
+      "id": "N10",
+      "parentId": "N6",
+      "name": "Online Food Orders",
+      "accountNumber": "ACC5001",
+      "transactions": [
+        {
+          "txnId": "T10",
+          "direction": "DEBIT",
+          "txnType": "POS",
+          "amount": 500,
+          "currency": "INR",
+          "timestamp": "2025-01-10T20:00:00Z",
+          "description": "Food Delivery"
+        }
+      ]
+    }
+  ]
+}
